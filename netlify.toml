@@ -1,0 +1,7 @@
+# CAN DO! Content website media (audio for the website tools).
+# Lets candocontent.com load these files, and keeps them cached so they start quickly.
+[[headers]]
+  for = "/audio/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "public, max-age=604800"
